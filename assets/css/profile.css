@@ -1,0 +1,38 @@
+.trip{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.tripcon{
+    border: thin;
+    border-color: white;
+    background-color: white;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.choice{
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-bottom: 100px;
+}
+
+.choicecon{
+    border: thin;
+    border-color: white;
+    background-color: white;
+    width: 650px;
+    border-radius: 15px;
+}
+
+.col{
+    float: left;
+}
+
+.review{
+    margin-left: 100px;
+    border: white;
+    background-color: white;
+    width: 900px;
+}

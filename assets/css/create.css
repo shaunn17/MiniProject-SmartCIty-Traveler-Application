@@ -1,0 +1,134 @@
+/*Split page*/
+.split {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+/*Split page right*/
+.right{
+    height: 100%;
+    width: 60%;
+    right: 0;
+    background-image: url(../images/travel.jpg);
+    animation: pulse1 10s infinite;
+    background-size: 800px 650px;
+}
+
+/*Split page left*/
+.left {
+    height: 100%;
+    width: 40%;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #faf9b5, white);
+  }
+
+/*Home link*/
+.temp{
+    margin-left: 600px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+}
+
+/*link onclick*/
+a:hover{
+    color: black;
+}
+
+/*links*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Header*/
+header {
+    text-align: center;
+    text-shadow: 1px 1px 3px grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-feature-settings: "swsh";
+    border: 3px solid #393276;
+    border-radius: 5px 20px 5px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin: auto;
+    position: relative;
+    width: 550px;
+    background: rgb(6, 16, 110);
+    color: white;
+}
+
+/*Bg animation*/
+@keyframes pulse1 {
+    from {background-image: url(../images/travel.jpg);}
+    to {background-image: url(../images/travel2.jpg);}
+}
+
+/*Details*/
+span::before {
+    content: "Enter Trip Details";
+    animation: animate infinite 10s;
+    padding-left: 10px;
+}
+
+/*Header animation*/
+@keyframes animate {
+  
+    0% {
+        content: "Create a New Schedule";
+    }
+
+    70% {
+        content: "Plan a New Trip";
+    }
+}
+
+/*Date styling*/
+.datepicker{
+    width: 200px;
+    margin-right: 90px;
+    float: right;
+    border-radius: 50px;
+    border-color: black;
+}
+
+/*Styling inputs*/
+.form-control{
+    border-radius: 50px;
+    width: 200px;
+    margin-right: 70px;
+    float: right;
+    border-color: black;
+}
+
+/*Form styling*/
+.formborder{
+    border: 30x solid white;
+    border-radius: 15px;
+    background: rgb(23, 2, 99);
+    color:white;
+    width: 450px;
+    margin-left: 30px;
+    border-width: 10px;
+    margin-top: 100px;
+}
+
+/*Styling Form contents*/
+.form{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: white;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: inherit;
+}
+
+/*Footer*/
+footer{
+    margin-left: 250px;
+    margin-top: 420px;
+}
+

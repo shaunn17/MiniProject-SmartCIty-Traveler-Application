@@ -1,0 +1,47 @@
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;    
+}
+
+body {
+    background: linear-gradient(to left, #56ab2f, #a8e063);
+    font-size: 30px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.bg-contact3{
+    width: 450px;
+    margin-left: 50px;
+}
+
+.wrap-contact3{
+    border: black thick;
+}
+
+.font-italic{
+    font-size: 15px;
+}
+
+.navbar{
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+
+.navbar1{
+    background-color: black;
+    color: white;
+    height: 50px;
+    margin-bottom: 0px;
+}
