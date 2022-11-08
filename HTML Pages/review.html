@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Reviews</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	
+<!--==============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:600&display=swap">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin="anonymous">
+<script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		
+		<button class="contact100-btn-show">
+			<i class="fa fa-comments" aria-hidden="true"></i>
+		</button>
+
+		<div class="wrap-contact100">
+			<button class="contact100-btn-hide">
+				<i class="fa-fa-close" aria-hidden="true"></i>
+			</button>
+
+			<form class="contact100-form validate-form" action="review.php" enctype="multipart/form-data" method="POST">
+				<span class="contact100-form-title">
+					WRITE A REVIEW
+				</span>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input">
+					<span class="label-input100">Destination Name</span>
+					<input class="input100" type="text" name="place" placeholder="Enter destination">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input">
+					<span class="label-input100">Enter Review:</span>
+					<textarea id="text" rows="5" cols="50" class="input100" name="review" placeholder="Your message here..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input">
+					<span class="label-input100">Add an image</span>
+					<input class="input100" type="file" name="image">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="stars">
+					<input class="star star-5" id="star-5" type="radio" name="rating" value="5"/>
+					<label class="star star-5" for="star-5"></label>
+					<input class="star star-4" id="star-4" type="radio" name="rating" value="4"/>
+					<label class="star star-4" for="star-4"></label>
+					<input class="star star-3" id="star-3" type="radio" name="rating" value="3"/>
+					<label class="star star-3" for="star-3"></label>
+					<input class="star star-2" id="star-2" type="radio" name="rating" value="2"/>
+					<label class="star star-2" for="star-2"></label>
+					<input class="star star-1" id="star-1" type="radio" name="rating" value="1"/>
+					<label class="star star-1" for="star-1"></label>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						
+							
+						<input class="input100" type="submit" id="submit" name="submit" value="Upload" onclick="display()">
+						
+					</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	
+	<script src="js/main.js"></script>
+
+	<script>
+        function display(){
+            alert('Thank you for reviewing our website!!!');
+        }
+    </script>
+	<script>
+		$(document).ready(function(){
+			// Check Radio-box
+			$(".stars input:radio").attr("checked", false);
+		
+			$('.stars input').click(function () {
+				$(".stars span").removeClass('checked');
+				$(this).parent().addClass('checked');
+			});
+		
+			$('input:radio').change(
+			  function(){
+				var userRating = this.value;
+				alert(userRating);
+			}); 
+		});
+		</script>
+</body>
+</html>

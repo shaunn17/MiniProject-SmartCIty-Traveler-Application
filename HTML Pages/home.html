@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home</title>
+  <link rel="shortcut icon" href="images/android-chrome-512x512.png" />
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <div class="row"></div>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+    <div class="column">
+      <h1 class="logo me-auto"><a href="#">TRAVEL</a></h1>
+    </div>
+     
+      <div class="column">
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="home.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="direct.html">Directions</a></li>
+          <li><a class="nav-link scrollto" href="login.html">Login</a></li>
+          <li><a class="nav-link scrollto" href="signup.html">Signup</a></li>
+          <li><a class="nav-link scrollto" href="help.html">Help</a></li>
+          
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      </div>
+
+      <a href="login.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Create a new</span> Profile</a>
+</div>
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero" class="d-flex align-items-center">
+      
+    <div class="container">
+        
+      <h1>Welcome to our Travel Website</h1>
+      
+    </div>
+  </section>
+
+  <main id="main">
+
+    
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Why Choose Our App?</h3>
+              <p>
+                The purpose of developing this web based application is to create a schedule for the 
+                        traveler travelling to city and wanted to explore the city by specifying the time in hours. 
+                        System then smartly analyzes the questionnaire and creates a schedule for traveler based on 
+                        provided time. This system can be used to view the location in the map that the user wishes to reach.</p>
+                    
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+        </section>
+
+          
+        <div class="container1">
+            
+            <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/singp.jpg" style="width:78%">
+                    <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/tokyo.jpg" style="width:73%">
+                    <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/Mumbai.jpg" style="width:75%">
+                    <div class="text"></div>
+                </div>
+            
+            </div>
+            
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+        
+        </div>
+
+        
+                <div class="coll">
+        <img src="images/maps.jpg" alt="Snow" style="width: 100%;">
+        <button class="btn"><a href="direct.html">Click here to get directions </a></button>
+        </div>
+    </div>
+   
+
+    <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>       
+  
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <div class="container" style="background-color:#1977cc; color: white;">
+    <h5 style="margin-left: 570px;">Copyright <i class="fa fa-copyright"></i></h5>
+    <i style="margin-left: 580px;" class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-github"></i>
+  </div>
+
+</body>
+
+</html>
