@@ -4,4 +4,4 @@
  We make a list of sightseeing information according to sightseeing categories. In the result, we display both guidance routes on the map and guidance routes by text. The application displays a menu with main categories of attraction available in the city, by clicking on one of the categories all the related information is displayed.
  
 
-Made in collaboration with Rebecca Dsouza, Shaun Figueiro and Collin Ferreira.
+Made in collaboration with Rebecca Dsouza, Leah Dsouza and Collin Ferreira.
